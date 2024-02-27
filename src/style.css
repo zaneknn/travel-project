@@ -3,7 +3,7 @@
 }
 body {
   font-family: var(--heading-font);
-  background-color: rgb(46, 48, 50);
+  background: rgb(46, 48, 50);
 }
 .container {
   max-width: 1400px;
@@ -49,11 +49,55 @@ header a {
   color: rgba(232, 237, 242, 0.9);
   padding: 16px 32px;
   border-radius: 4px;
-  background-color: rgba(232, 237, 242, 0.2);
+  background-color: rgba(232, 237, 242, 0.4);
   display: inline-block;
 }
 
-@media (max-width: 900px) {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+footer {
+  background-image: linear-gradient(rgba(5, 21, 27, 0.9), rgba(5, 21, 27, 0.9)),
+    url("../img/Palawan.png");
+  color: rgba(232, 237, 242, 0.9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+section {
+  max-width: 1200px;
+  margin: 0 30px;
+  display: block;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+  margin-right: 10px;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+footer ul {
+  padding: 0px;
+}
+footer a {
+  color: rgba(232, 237, 242, 0.7);
+}
+footer .box {
+  padding: 0 10px;
+  margin-left: 40px;
+}
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -65,5 +109,13 @@ header a {
   }
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
   }
 }
