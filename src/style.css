@@ -56,15 +56,56 @@ header a {
 .grid {
   display: grid;
   grid-gap: 54px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
+
+main {
+  background-color: white;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+main p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
+img {
+  width: 500px;
+  height: 550px;
+}
+.img-responsive {
+  max-width: 100%;
+}
+
 footer {
   background-image: linear-gradient(rgba(5, 21, 27, 0.9), rgba(5, 21, 27, 0.9)),
     url("../img/Palawan.png");
   color: rgba(232, 237, 242, 0.9);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 footer h3 {
   font-weight: 700;
@@ -75,6 +116,7 @@ section {
   max-width: 1200px;
   margin: 0 30px;
   display: block;
+  padding: 100px 0;
 }
 footer p {
   font-weight: 400;
@@ -114,8 +156,16 @@ footer .box {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+    text-align: center;
   }
   section {
     padding: 30px;
+  }
+  footer .box {
+    padding: 0;
+    margin-left: 0px;
+  }
+  .img-responsive {
+    display: none;
   }
 }
