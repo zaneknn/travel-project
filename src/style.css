@@ -149,6 +149,7 @@ main p {
 .img-responsive-main {
   width: 100%;
   display: block;
+  filter: saturate(2);
 }
 
 footer {
