@@ -63,9 +63,41 @@ header a {
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-3-columns img {
+  width: 150px;
+  height: 150px;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding: 0 30px;
+}
+.btn {
+  display: block;
+  color: white;
+  background-color: #272044;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 4px;
+}
 
 main {
-  background-color: white;
+  background-color: #ffffff;
 }
 main h2 {
   font-weight: 700;
@@ -79,10 +111,24 @@ main h2 {
 }
 main h3 {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 34px;
   line-height: 1.5;
   color: #272044;
   margin: 0;
+}
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  margin: 0;
+  color: #272044;
 }
 main p {
   font-weight: 400;
@@ -98,6 +144,7 @@ img {
 }
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 
 footer {
@@ -113,10 +160,11 @@ footer h3 {
   line-height: 30px;
 }
 section {
-  max-width: 1200px;
-  margin: 0 30px;
-  display: block;
-  padding: 100px 0;
+  margin: 0 auto;
+  padding: 100px;
+}
+section.secondary {
+  background: #f8f8f8;
 }
 footer p {
   font-weight: 400;
@@ -135,10 +183,17 @@ footer ul {
 footer a {
   color: rgba(232, 237, 242, 0.7);
 }
-footer .box {
+footer.box {
   padding: 0 10px;
   margin-left: 40px;
 }
+footer.box-1 {
+  margin: 0;
+}
+.text-center {
+  text-align: center;
+}
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
